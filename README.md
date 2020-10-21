@@ -1,6 +1,6 @@
 # TheCashier
 
-Program Calculator Aplikasi ini berfungsi untuk menambahkan sebuah item, biasanya di gunakan untuk menjual sebuah barang/jasa
+Program TheCashier adalah Aplikasi yang berfungsi untuk menambahkan sebuah item, biasanya di gunakan untuk menjual sebuah barang/jasa
 
 #Fungsi
 Kalian bisa menambahkan sebuah item
