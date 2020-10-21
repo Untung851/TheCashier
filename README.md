@@ -2,27 +2,31 @@
 
 Program TheCashier adalah Aplikasi yang berfungsi untuk menambahkan sebuah item, biasanya di gunakan untuk menjual sebuah barang/jasa
 
-#Fungsi
+# Fungsi
+
 Kalian bisa menambahkan sebuah item
 kaliah bisa memberikan harga
 kalian bisa memencet tombol "Tambahkan"
-#Cara Kerja
+
+# Cara Kerja
 
 Diawali dengan "MainWindows" pada class "MainWindows.xaml.cs" kita mendeklarasikan sebuah fungsi calculator
 
 ```csharp
  {
-        private Calculator calculator;
+        private TheCashier thecashier;
         public MainWindow()
         {
             InitializeComponent();
-            calculator = new Calculator();
-            listBox.ItemsSource = calculator.getListItem();
+            thecashier = new TheCashier();
+            listBox.ItemsSource = thecashier.getListItem();
         }
    }
 
 ```
+
 Untuk Add Button
+
 ```csharp
 private void AddButton_click(object sender, RoutedEventArgs e)
         {
@@ -86,14 +90,14 @@ class Item
     }
 ```
 
-Kemudian ini adalah logika perhitungannya "Calculator.cs" 
+Kemudian ini adalah logika perhitungannya "TheCashier.cs" 
 ```csharp
-class Calculator
+class TheCashier
     {
         private List<Item> ListItem;
         private double total = 0;
 
-        public Calculator()
+        public ThecCashier()
         {
             this.ListItem = new List<Item>();
         }
